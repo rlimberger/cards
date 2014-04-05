@@ -35,8 +35,7 @@
     //
     // TODO: This test could easily be extended with larger number of test cases
     // read from a file, for example.
-    NSDictionary* testData = @{
-                               @(-1) : @(0),
+    NSDictionary* testData = @{@(-1) : @(0),
                                @(0)  : @(0),
                                @(1)  : @(1),
                                @(2)  : @(2),
@@ -47,8 +46,12 @@
     [testData enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL* stop) {
         NSNumber* numCards = key;
         NSNumber* expectedResult = obj;
-        XCTAssert(([deckController roundsForDeckWithSize:numCards.integerValue] == expectedResult.integerValue),
-                  @"Failed with %ld cards.", (long)numCards.integerValue);
+        
+        // Run the algorithm for this test case and compare it to the expected result.
+        BOOL result = ([deckController roundsForDeckWithSize:numCards.integerValue] == expectedResult.integerValue);
+        
+        // Fail verbosely if we didn't get the expected result.
+        XCTAssert(result, @"Failed with %ld cards.", (long)numCards.integerValue);
     }];
 }
 

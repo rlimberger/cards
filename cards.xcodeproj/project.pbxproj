@@ -15,11 +15,8 @@
 		70F7AF4A18EF82A60060EA7A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70F7AF4818EF82A60060EA7A /* InfoPlist.strings */; };
 		70F7AF4C18EF82A60060EA7A /* cards_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F7AF4B18EF82A60060EA7A /* cards_Tests.m */; };
 		70F7AF5518EF84520060EA7A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70F7AF5418EF84520060EA7A /* XCTest.framework */; };
-		70F7AF5618EF849F0060EA7A /* RLDeckController.h in Sources */ = {isa = PBXBuildFile; fileRef = 701AC79418EF48E9005D748D /* RLDeckController.h */; };
 		70F7AF5718EF849F0060EA7A /* RLDeckController.m in Sources */ = {isa = PBXBuildFile; fileRef = 701AC79518EF48E9005D748D /* RLDeckController.m */; };
-		70F7AF5818EF849F0060EA7A /* RLDeck.h in Sources */ = {isa = PBXBuildFile; fileRef = 701AC79718EF4968005D748D /* RLDeck.h */; };
 		70F7AF5918EF849F0060EA7A /* RLDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 701AC79818EF4969005D748D /* RLDeck.m */; };
-		70F7AF5A18EF849F0060EA7A /* RLCard.h in Sources */ = {isa = PBXBuildFile; fileRef = 701AC78B18EF4838005D748D /* RLCard.h */; };
 		70F7AF5B18EF849F0060EA7A /* RLCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 701AC78C18EF4838005D748D /* RLCard.m */; };
 /* End PBXBuildFile section */
 
@@ -248,11 +245,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70F7AF5618EF849F0060EA7A /* RLDeckController.h in Sources */,
 				70F7AF5718EF849F0060EA7A /* RLDeckController.m in Sources */,
-				70F7AF5818EF849F0060EA7A /* RLDeck.h in Sources */,
 				70F7AF5918EF849F0060EA7A /* RLDeck.m in Sources */,
-				70F7AF5A18EF849F0060EA7A /* RLCard.h in Sources */,
 				70F7AF5B18EF849F0060EA7A /* RLCard.m in Sources */,
 				70F7AF4C18EF82A60060EA7A /* cards_Tests.m in Sources */,
 			);
